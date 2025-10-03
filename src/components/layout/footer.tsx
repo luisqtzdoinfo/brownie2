@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="flex flex-col gap-4">
           <Link href="/" className="flex items-center space-x-2">
             <Sprout className="h-6 w-6 text-primary" />
-            <span className="font-bold font-headline text-lg">Brownie Bliss Hub</span>
+            <span className="font-bold font-headline text-lg">Academia do Brownie</span>
           </Link>
           <p className="text-sm text-muted-foreground">
             Criando os brownies mais maravilhosos que você já provou.
@@ -43,7 +43,7 @@ export default function Footer() {
       </div>
       <div className="bg-muted/20">
         <div className="container py-4 text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Brownie Bliss Hub. Todos os direitos reservados.
+          © {new Date().getFullYear()} Academia do Brownie. Todos os direitos reservados.
         </div>
       </div>
     </footer>

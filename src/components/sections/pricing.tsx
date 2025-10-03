@@ -7,7 +7,7 @@ export default function PricingSection() {
     {
       title: 'Pacote Brownie Iniciante',
       price: 'R$4.99',
-      description: 'Feito para quem quer aprender e vender brownie',
+      description: 'Feito para quem quer aprender e vender brownie.',
       features: ['receita de bronwie estilo Nova York classico e saboroso', 'PDF com secretos para o brownie perfeito'],
     },
     {

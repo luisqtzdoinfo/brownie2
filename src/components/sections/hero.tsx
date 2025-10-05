@@ -31,9 +31,6 @@ export default function HeroSection() {
             <Button size="lg" asChild className="animate-shimmer shadow-lg shadow-primary/60">
               <Link href="#pricing">Peça Sua Felicidade</Link>
             </Button>
-            <Button size="lg" variant="secondary" asChild>
-              <Link href="#about">Saiba Mais</Link>
-            </Button>
           </div>
         </div>
       </div>

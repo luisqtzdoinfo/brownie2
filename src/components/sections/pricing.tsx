@@ -11,17 +11,17 @@ export default function PricingSection() {
       features: ['receita de bronwie estilo Nova York classico e saboroso', 'PDF com segredos para o brownie perfeito'],
     },
     {
-      title: 'Caixa da Felicidade',
-      price: 'R$24.99',
-      isPopular: true,
-      description: 'Uma caixa com 6 brownies. Misture e combine seus favoritos!',
-      features: ['6 Brownies da maneira que desejar', 'Ótimo para compartilhar', '10% de Desconto'],
-    },
-    {
       title: 'Pacote de Eventos',
       price: 'R$44.99',
+      isPopular: true,
       description: 'Um pacote excelente para adoçar qualquer evento!',
       features: ['12 Brownies à sua escolha', 'Melhor custo-benefício', 'Perfeito para eventos'],
+    },
+    {
+      title: 'Caixa da Felicidade',
+      price: 'R$24.99',
+      description: 'Uma caixa com 6 brownies. Misture e combine seus favoritos!',
+      features: ['6 Brownies da maneira que desejar', 'Ótimo para compartilhar', '10% de Desconto'],
     },
   ];
 

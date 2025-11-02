@@ -28,8 +28,8 @@ export default function HeroSection() {
             Experimente os brownies mais ricos, cremosos e decadentes, feitos à mão com amor e os melhores ingredientes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" asChild>
-              <Link href="#pricing">Peça Sua Felicidade</Link>
+            <Button size="lg" asChild className="animate-shimmer shadow-lg shadow-primary/40 transition-shadow hover:shadow-xl hover:shadow-primary/60">
+              <Link href="#pricing">Quero o meu agora!</Link>
             </Button>
           </div>
         </div>

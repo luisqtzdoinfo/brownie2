@@ -58,7 +58,7 @@ export default function PricingSection() {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Button className="w-full" variant={plan.isPopular ? 'default' : 'secondary'}>Comprar Agora</Button>
+                <Button className="w-full" variant={plan.isPopular ? 'default' : 'secondary'}>Comprar Brownie</Button>
               </CardFooter>
             </Card>
           ))}

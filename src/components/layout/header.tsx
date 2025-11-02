@@ -37,8 +37,8 @@ export default function Header() {
           ))}
         </nav>
         <div className="flex flex-1 items-center justify-end space-x-4">
-          <Button asChild>
-            <Link href="#pricing">Peça Agora</Link>
+          <Button asChild className="animate-shimmer shadow-lg shadow-primary/40 transition-shadow hover:shadow-xl hover:shadow-primary/60">
+            <Link href="#pricing">Quero o meu agora!</Link>
           </Button>
           <Sheet open={isSheetOpen} onOpenChange={setSheetOpen}>
             <SheetTrigger asChild>

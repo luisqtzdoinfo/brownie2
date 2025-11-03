@@ -30,7 +30,7 @@ export default function PricingSection() {
       features: ['6 Brownies da maneira que desejar', 'Ótimo para compartilhar', '10% de Desconto'],
       isPopular: false,
       cta: 'Comprar Caixa',
-      link: '#'
+      link: 'https://pay.cakto.com.br/tdnxjd3_631878'
     },
   ];
 
@@ -67,7 +67,7 @@ export default function PricingSection() {
                 </ul>
               </CardContent>
               <CardFooter>
-                 <Button asChild className={`w-full ${plan.isPopular || plan.title === 'Pacote Brownie Iniciante' ? 'animate-shimmer shadow-lg shadow-primary/40' : ''}`} variant={plan.isPopular ? 'default' : 'secondary'}>
+                 <Button asChild className={`w-full`} variant={plan.isPopular ? 'default' : 'secondary'}>
                   <Link href={plan.link}>{plan.cta}</Link>
                 </Button>
               </CardFooter>

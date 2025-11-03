@@ -95,15 +95,10 @@ export default {
             height: '0',
           },
         },
-        shimmer: {
-          '0%, 100%': { boxShadow: '0 0 30px 8px hsl(var(--primary) / 0.6)' },
-          '50%': { boxShadow: '0 0 60px 18px hsl(var(--primary) / 0.9)' },
-        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        shimmer: 'shimmer 2.5s ease-in-out infinite',
       },
     },
   },

@@ -58,7 +58,7 @@ export default function ContactSection() {
             <h2 className="text-3xl font-bold font-headline tracking-tighter sm:text-4xl">
               Entre em Contato
             </h2>
-            <p className="text-muted-foreground text-lg">
+            <p className="text-muted-foreground text-lg mx-auto max-w-prose lg:mx-0">
               Tem uma pergunta, um pedido especial ou apenas quer falar sobre brownies? Adoraríamos ouvir de você!
             </p>
           </div>

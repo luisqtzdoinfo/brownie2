@@ -54,15 +54,15 @@ export default function AiRecommender() {
     <section className="bg-secondary/50">
       <div className="container px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-4">
-            <h2 className="text-3xl font-bold font-headline tracking-tighter sm:text-4xl text-center md:text-left">
+          <div className="space-y-4 text-center md:text-left">
+            <h2 className="text-3xl font-bold font-headline tracking-tighter sm:text-4xl">
               Encontre o Seu Brownie Perfeito
             </h2>
-            <p className="text-muted-foreground md:text-lg/relaxed text-center md:text-left">
+            <p className="text-muted-foreground md:text-lg/relaxed">
               Impressionado com todas as opções deliciosas? Deixe nosso Robô de Brownie com IA ajudá-lo a encontrar a combinação perfeita para o seu gosto.
             </p>
             <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 text-left">
                 <FormField
                   control={form.control}
                   name="chocolateType"

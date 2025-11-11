@@ -55,10 +55,10 @@ export default function AiRecommender() {
       <div className="container px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-4">
-            <h2 className="text-3xl font-bold font-headline tracking-tighter sm:text-4xl">
+            <h2 className="text-3xl font-bold font-headline tracking-tighter sm:text-4xl text-center md:text-left">
               Encontre o Seu Brownie Perfeito
             </h2>
-            <p className="text-muted-foreground md:text-lg/relaxed">
+            <p className="text-muted-foreground md:text-lg/relaxed text-center md:text-left">
               Impressionado com todas as opções deliciosas? Deixe nosso Robô de Brownie com IA ajudá-lo a encontrar a combinação perfeita para o seu gosto.
             </p>
             <Form {...form}>
@@ -68,20 +68,20 @@ export default function AiRecommender() {
                   name="chocolateType"
                   render={({ field }) => (
                     <FormItem className="space-y-3">
-                      <FormLabel>Chocolate Favorito?</FormLabel>
+                      <FormLabel className="text-base">Chocolate Favorito?</FormLabel>
                       <FormControl>
                         <RadioGroup onValueChange={field.onChange} defaultValue={field.value} className="flex flex-col space-y-1">
                           <FormItem className="flex items-center space-x-3 space-y-0">
                             <FormControl><RadioGroupItem value="dark" /></FormControl>
-                            <FormLabel className="font-normal">Intenso e Amargo</FormLabel>
+                            <FormLabel className="font-normal text-base">Intenso e Amargo</FormLabel>
                           </FormItem>
                           <FormItem className="flex items-center space-x-3 space-y-0">
                             <FormControl><RadioGroupItem value="milk" /></FormControl>
-                            <FormLabel className="font-normal">Suave ao Leite</FormLabel>
+                            <FormLabel className="font-normal text-base">Suave ao Leite</FormLabel>
                           </FormItem>
                           <FormItem className="flex items-center space-x-3 space-y-0">
                             <FormControl><RadioGroupItem value="white" /></FormControl>
-                            <FormLabel className="font-normal">Branco Cremoso</FormLabel>
+                            <FormLabel className="font-normal text-base">Branco Cremoso</FormLabel>
                           </FormItem>
                         </RadioGroup>
                       </FormControl>
@@ -94,20 +94,20 @@ export default function AiRecommender() {
                   name="texture"
                   render={({ field }) => (
                     <FormItem className="space-y-3">
-                      <FormLabel>Textura Ideal?</FormLabel>
+                      <FormLabel className="text-base">Textura Ideal?</FormLabel>
                       <FormControl>
                         <RadioGroup onValueChange={field.onChange} defaultValue={field.value} className="flex flex-col space-y-1">
                            <FormItem className="flex items-center space-x-3 space-y-0">
                             <FormControl><RadioGroupItem value="fudgy" /></FormControl>
-                            <FormLabel className="font-normal">Super Cremoso</FormLabel>
+                            <FormLabel className="font-normal text-base">Super Cremoso</FormLabel>
                           </FormItem>
                           <FormItem className="flex items-center space-x-3 space-y-0">
                             <FormControl><RadioGroupItem value="chewy" /></FormControl>
-                            <FormLabel className="font-normal">Com Pedaços</FormLabel>
+                            <FormLabel className="font-normal text-base">Com Pedaços</FormLabel>
                           </FormItem>
                           <FormItem className="flex items-center space-x-3 space-y-0">
                             <FormControl><RadioGroupItem value="cakey" /></FormControl>
-                            <FormLabel className="font-normal">Leve como Bolo</FormLabel>
+                            <FormLabel className="font-normal text-base">Leve como Bolo</FormLabel>
                           </FormItem>
                         </RadioGroup>
                       </FormControl>
@@ -116,14 +116,14 @@ export default function AiRecommender() {
                   )}
                 />
                 
-                <Button type="submit" disabled={isLoading}>
+                <Button type="submit" disabled={isLoading} className="h-11 text-base w-full sm:w-auto">
                   {isLoading ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Wand2 className="mr-2 h-4 w-4" />}
                   Encontrar Meu Brownie
                 </Button>
               </form>
             </Form>
           </div>
-          <div className="flex items-center justify-center min-h-[300px]">
+          <div className="flex items-center justify-center min-h-[300px] mt-8 md:mt-0">
             {isLoading && <Loader2 className="h-12 w-12 animate-spin text-primary" />}
             {recommendation && !isLoading && (
               <Card className="w-full max-w-md shadow-2xl animate-in fade-in-50 zoom-in-95">

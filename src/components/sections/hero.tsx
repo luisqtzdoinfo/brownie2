@@ -7,7 +7,7 @@ export default function HeroSection() {
   const heroImage = PlaceHolderImages.find(p => p.id === 'hero-brownie');
 
   return (
-    <section className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center text-center text-white py-0">
+    <section className="relative w-full h-[80vh] min-h-[500px] flex items-center justify-center text-center text-white py-0">
       {heroImage && (
         <Image
           src={heroImage.imageUrl}
@@ -20,7 +20,7 @@ export default function HeroSection() {
       )}
       <div className="absolute inset-0 bg-black/50 -z-10" />
       <div className="container px-4 md:px-6">
-        <div className="max-w-3xl mx-auto space-y-4">
+        <div className="max-w-3xl mx-auto space-y-6">
           <h1 className="text-4xl font-headline font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl text-primary-foreground">
             Delicie-se com a Pura Felicidade
           </h1>
@@ -28,7 +28,7 @@ export default function HeroSection() {
             Experimente os brownies mais ricos, cremosos e decadentes, feitos à mão com amor e os melhores ingredientes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" asChild className="transition-transform duration-200 ease-in-out hover:scale-105 shadow-lg hover:shadow-primary/50">
+            <Button size="lg" asChild className="transition-transform duration-200 ease-in-out hover:scale-105 shadow-lg hover:shadow-primary/50 h-12 text-lg px-8">
               <Link href="https://pay.cakto.com.br/7a4pjou_631916">
                 Quero o meu agora!
               </Link>

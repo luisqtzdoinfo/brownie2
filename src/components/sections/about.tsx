@@ -13,29 +13,29 @@ export default function AboutSection() {
             <div className="inline-block rounded-lg bg-primary text-primary-foreground px-3 py-1 text-sm font-medium">
               Nosso Segredo
             </div>
-            <h2 className="text-3xl font-bold font-headline tracking-tighter sm:text-4xl">
+            <h2 className="text-3xl font-bold font-headline tracking-tighter sm:text-4xl text-center md:text-left">
               Mais do que Apenas um Brownie
             </h2>
-            <p className="text-muted-foreground md:text-lg/relaxed">
+            <p className="text-muted-foreground md:text-lg/relaxed text-center md:text-left">
               Na Academia do Brownie, acreditamos que um ótimo brownie pode tornar qualquer dia melhor. É por isso que colocamos nossos corações em cada fornada, usando apenas ingredientes premium para criar uma experiência de sabor inesquecível.
             </p>
             <ul className="grid gap-4">
               <li className="flex items-start gap-4">
-                <CheckCircle className="mt-1 h-5 w-5 text-primary" />
+                <CheckCircle className="mt-1 h-5 w-5 text-primary flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold">Chocolate Premium</h3>
                   <p className="text-muted-foreground">Usamos chocolate belga de alta qualidade para um sabor profundo e rico.</p>
                 </div>
               </li>
               <li className="flex items-start gap-4">
-                <CheckCircle className="mt-1 h-5 w-5 text-primary" />
+                <CheckCircle className="mt-1 h-5 w-5 text-primary flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold">Ingredientes Frescos da Fazenda</h3>
                   <p className="text-muted-foreground">Manteiga orgânica, ovos de galinhas criadas soltas e farinha não branqueada fazem toda a diferença.</p>
                 </div>
               </li>
               <li className="flex items-start gap-4">
-                <CheckCircle className="mt-1 h-5 w-5 text-primary" />
+                <CheckCircle className="mt-1 h-5 w-5 text-primary flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold">Assado com Amor</h3>
                   <p className="text-muted-foreground">Cada brownie é feito à mão em pequenos lotes para garantir a perfeição.</p>
@@ -50,7 +50,7 @@ export default function AboutSection() {
                 alt={aboutImage.description}
                 width={600}
                 height={400}
-                className="rounded-xl shadow-lg"
+                className="rounded-xl shadow-lg w-full h-auto"
                 data-ai-hint={aboutImage.imageHint}
               />
             )}

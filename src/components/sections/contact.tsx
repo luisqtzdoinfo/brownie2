@@ -53,12 +53,12 @@ export default function ContactSection() {
   return (
     <section id="contact">
       <div className="container px-4 md:px-6">
-        <div className="grid gap-10 lg:grid-cols-2">
-          <div className="space-y-4">
+        <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
+          <div className="space-y-4 text-center lg:text-left">
             <h2 className="text-3xl font-bold font-headline tracking-tighter sm:text-4xl">
               Entre em Contato
             </h2>
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground text-lg">
               Tem uma pergunta, um pedido especial ou apenas quer falar sobre brownies? Adoraríamos ouvir de você!
             </p>
           </div>
@@ -104,7 +104,7 @@ export default function ContactSection() {
                     </FormItem>
                   )}
                 />
-                <Button type="submit" disabled={isLoading}>
+                <Button type="submit" disabled={isLoading} className="w-full lg:w-auto h-11 text-base">
                   {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
                   Enviar Mensagem
                 </Button>

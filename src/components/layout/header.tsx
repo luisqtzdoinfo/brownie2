@@ -18,34 +18,35 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 items-center">
+      <div className="container flex h-16 items-center">
         <div className="mr-4 flex items-center">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <Sprout className="h-6 w-6 text-primary" />
             <span className="font-headline whitespace-nowrap overflow-hidden text-ellipsis tracking-wider text-primary scale-x-130 text-2xl font-bold">Academia do Brownie</span>
           </Link>
         </div>
-        <nav className="hidden items-center space-x-6 text-sm font-medium md:flex">
+        <div className="flex-1 md:hidden"></div>
+        <nav className="hidden items-center space-x-6 text-sm font-medium md:flex flex-1 justify-center">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="transition-colors hover:text-foreground/80 text-foreground/60"
+              className="transition-colors hover:text-foreground/80 text-foreground/60 text-base"
             >
               {link.label}
             </Link>
           ))}
         </nav>
-        <div className="flex flex-1 items-center justify-end space-x-4">
-          <Button asChild className="transition-transform duration-200 ease-in-out hover:scale-105 shadow-lg hover:shadow-primary/50">
+        <div className="flex items-center justify-end space-x-2">
+          <Button asChild className="transition-transform duration-200 ease-in-out hover:scale-105 shadow-lg hover:shadow-primary/50 hidden md:inline-flex h-11 text-base">
             <Link href="https://pay.cakto.com.br/7a4pjou_631916">
               Quero o meu agora!
             </Link>
           </Button>
           <Sheet open={isSheetOpen} onOpenChange={setSheetOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="md:hidden">
-                <Menu className="h-5 w-5" />
+              <Button variant="ghost" size="icon" className="md:hidden h-11 w-11">
+                <Menu className="h-6 w-6" />
                 <span className="sr-only">Abrir Menu</span>
               </Button>
             </SheetTrigger>
@@ -65,6 +66,11 @@ export default function Header() {
                     {link.label}
                   </Link>
                 ))}
+                <Button asChild className="w-full h-12 text-lg mt-4">
+                  <Link href="https://pay.cakto.com.br/7a4pjou_631916">
+                    Quero o meu agora!
+                  </Link>
+                </Button>
               </div>
             </SheetContent>
           </Sheet>

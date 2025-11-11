@@ -47,12 +47,12 @@ export default function PricingSection() {
             </p>
           </div>
         </div>
-        <div className="mx-auto grid max-w-sm items-stretch gap-8 sm:max-w-4xl sm:grid-cols-2 lg:max-w-5xl lg:grid-cols-3">
+        <div className="mx-auto grid max-w-sm items-stretch gap-8 sm:max-w-4xl sm:grid-cols-1 md:grid-cols-2 lg:max-w-5xl lg:grid-cols-3">
           {plans.map((plan) => (
             <Card key={plan.title} className={`flex flex-col ${plan.isPopular ? 'border-primary ring-2 ring-primary shadow-lg' : ''}`}>
               {plan.isPopular && <div className="bg-primary text-primary-foreground text-sm font-semibold text-center py-1 rounded-t-lg">Mais Popular</div>}
               <CardHeader>
-                <CardTitle className="font-headline">{plan.title}</CardTitle>
+                <CardTitle className="font-headline text-2xl">{plan.title}</CardTitle>
                 <CardDescription>{plan.description}</CardDescription>
               </CardHeader>
               <CardContent className="flex-1 space-y-6">
@@ -67,7 +67,7 @@ export default function PricingSection() {
                 </ul>
               </CardContent>
               <CardFooter>
-                 <Button asChild className={`w-full`} variant={plan.isPopular ? 'default' : 'secondary'}>
+                 <Button asChild className={`w-full h-11 text-base`} variant={plan.isPopular ? 'default' : 'secondary'}>
                   <Link href={plan.link}>{plan.cta}</Link>
                 </Button>
               </CardFooter>

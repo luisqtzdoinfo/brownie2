@@ -4,8 +4,8 @@ import { Sprout, Twitter, Instagram, Facebook } from 'lucide-react';
 export default function Footer() {
   return (
     <footer className="bg-muted/40 w-full">
-      <div className="container py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
-        <div className="flex flex-col gap-4">
+      <div className="container py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center sm:text-left">
+        <div className="flex flex-col items-center sm:items-start gap-4">
           <Link href="/" className="flex items-center space-x-2">
             <Sprout className="h-6 w-6 text-primary" />
             <span className="font-headline whitespace-nowrap overflow-hidden text-ellipsis tracking-wider text-primary scale-x-130 text-2xl font-bold">Academia do Brownie</span>
@@ -26,7 +26,7 @@ export default function Footer() {
           <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Termos de Serviço</Link>
           <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Política de Privacidade</Link>
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 items-center sm:items-start">
           <h3 className="font-semibold">Siga-nos</h3>
           <div className="flex gap-4">
             <Link href="#" aria-label="Twitter">

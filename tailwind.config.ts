@@ -95,16 +95,10 @@ export default {
             height: '0',
           },
         },
-        shine: {
-          '0%': { left: '-75%' },
-          '50%': { left: '125%' },
-          '100%': { left: '125%' },
-        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        shine: 'shine 2.5s infinite',
       },
     },
   },

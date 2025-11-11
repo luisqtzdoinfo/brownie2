@@ -6,7 +6,7 @@ import Link from 'next/link';
 export default function PricingSection() {
   const plans = [
     {
-      title: 'Pacote de Eventos',
+      title: 'Pacote Brownie Iniciante',
       price: 'R$44.99',
       isPopular: true,
       description: 'Um pacote excelente para adoçar qualquer evento!',
@@ -15,7 +15,7 @@ export default function PricingSection() {
       link: 'https://pay.cakto.com.br/7a4pjou_631916'
     },
     {
-      title: 'Pacote Brownie Iniciante',
+      title: 'Pacote de Eventos',
       price: 'R$5.99',
       description: 'Feito para quem quer aprender e vender brownie.',
       features: ['receita de bronwie estilo Nova York classico e saboroso', 'PDF com segredos para o brownie perfeito'],

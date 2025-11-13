@@ -29,6 +29,12 @@ export default function TestimonialsSection() {
       name: 'Mariana L.',
       avatarId: 'testimonial-4',
       quote: 'A textura é perfeita, molhadinha por dentro e com aquela casquinha crocante. Simplesmente viciante!',
+    },
+    {
+      id: 5,
+      name: 'Carolina F.',
+      avatarId: 'testimonial-5',
+      quote: 'Comprei por curiosidade e agora já faço pedido toda semana. É amor em forma de brownie!',
     }
   ];
 

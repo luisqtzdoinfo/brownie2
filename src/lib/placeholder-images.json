@@ -59,6 +59,12 @@
       "description": "Retrato de um quarto cliente feliz",
       "imageUrl": "https://i.postimg.cc/9fmGsqCS/pexels-photo-1102341-jpeg-cs-srgb-dl-pexels-daniel-xavier-1102341.jpg",
       "imageHint": "rosto feminino"
+    },
+    {
+      "id": "testimonial-5",
+      "description": "Retrato de um quinto cliente feliz",
+      "imageUrl": "https://i.postimg.cc/T1yF5bMv/pexels-photo-774909.jpg",
+      "imageHint": "rosto feminino"
     }
   ]
 }

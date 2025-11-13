@@ -24,6 +24,12 @@ export default function TestimonialsSection() {
       avatarId: 'testimonial-3',
       quote: 'O doce perfeito para qualquer ocasião. A entrega foi rápida e os brownies estavam tão frescos. 10/10!',
     },
+    {
+      id: 4,
+      name: 'Mariana L.',
+      avatarId: 'testimonial-4',
+      quote: 'A textura é perfeita, molhadinha por dentro e com aquela casquinha crocante. Simplesmente viciante!',
+    }
   ];
 
   return (

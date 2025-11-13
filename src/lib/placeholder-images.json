@@ -21,7 +21,7 @@
     {
       "id": "gallery-2",
       "description": "Pilha de brownies",
-      "imageUrl": "https://images.unsplash.com/photo-1589728058784-0ca623900f90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxicm93bmllJTIwc3RhY2t8ZW58MHx8fHwxNzU5NDU4Nzg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1589728058784-0ca623900f90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxicmウbmllJTIwc3RhY2t8ZW58MHx8fHwxNzU5NDU4Nzg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "pilha de brownie"
     },
     {
@@ -53,6 +53,12 @@
       "description": "Retrato de um terceiro cliente feliz",
       "imageUrl": "https://i.postimg.cc/05mtfkjz/Chat-GPT-Image-3-de-out-de-2025-16-51-27.png",
       "imageHint": "pessoa feliz"
+    },
+    {
+      "id": "testimonial-4",
+      "description": "Retrato de um quarto cliente feliz",
+      "imageUrl": "https://i.postimg.cc/2jWJjVzC/photo-1580489944761-15a19d654956.jpg",
+      "imageHint": "rosto feminino"
     }
   ]
 }

@@ -66,17 +66,17 @@ export default function TestimonialsSection() {
               const avatarImage = PlaceHolderImages.find(p => p.id === testimonial.avatarId);
               return (
                 <CarouselItem key={testimonial.id} className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-1">
-                    <Card>
-                      <CardContent className="flex flex-col items-center text-center p-6 space-y-4">
+                  <div className="p-1 h-full">
+                    <Card className="h-full flex flex-col">
+                      <CardContent className="flex flex-col items-center text-center p-6 space-y-4 flex-1">
                         <Avatar className="w-20 h-20">
                           {avatarImage && (
                             <AvatarImage src={avatarImage.imageUrl} alt={testimonial.name} data-ai-hint={avatarImage.imageHint} />
                           )}
                           <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
                         </Avatar>
-                        <p className="text-muted-foreground italic">&quot;{testimonial.quote}&quot;</p>
-                        <p className="font-semibold font-headline text-lg">{testimonial.name}</p>
+                        <p className="text-muted-foreground italic flex-1">&quot;{testimonial.quote}&quot;</p>
+                        <p className="font-semibold font-headline text-lg pt-4">{testimonial.name}</p>
                       </CardContent>
                     </Card>
                   </div>

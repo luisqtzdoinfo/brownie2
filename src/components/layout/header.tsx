@@ -38,7 +38,7 @@ export default function Header() {
           ))}
         </nav>
         <div className="flex items-center justify-end space-x-2">
-          <Button asChild className="transition-transform duration-200 ease-in-out hover:scale-105 shadow-lg hover:shadow-primary/50 hidden md:inline-flex h-11 text-base">
+          <Button asChild className="transition-transform duration-200 ease-in-out hover:scale-105 shadow-lg hover:shadow-primary/50 hidden md:inline-flex h-11 text-base shine-effect">
             <Link href="https://pay.cakto.com.br/7a4pjou_631916">
               Quero o meu agora!
             </Link>
@@ -66,7 +66,7 @@ export default function Header() {
                     {link.label}
                   </Link>
                 ))}
-                <Button asChild className="w-full h-12 text-lg mt-4">
+                <Button asChild className="w-full h-12 text-lg mt-4 shine-effect">
                   <Link href="https://pay.cakto.com.br/7a4pjou_631916">
                     Quero o meu agora!
                   </Link>

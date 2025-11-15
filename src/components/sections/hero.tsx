@@ -28,7 +28,7 @@ export default function HeroSection() {
             Experimente os brownies mais ricos, cremosos e decadentes, feitos à mão com amor e os melhores ingredientes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" asChild className="transition-transform duration-200 ease-in-out hover:scale-105 shadow-lg hover:shadow-primary/50 h-12 text-lg px-8">
+            <Button size="lg" asChild className="transition-transform duration-200 ease-in-out hover:scale-105 shadow-lg hover:shadow-primary/50 h-12 text-lg px-8 shine-effect">
               <Link href="https://pay.cakto.com.br/7a4pjou_631916">
                 Quero o meu agora!
               </Link>
